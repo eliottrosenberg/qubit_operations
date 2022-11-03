@@ -3,8 +3,6 @@
 from scipy.sparse import coo_array
 import numpy as np
 from scipy.sparse.linalg import eigsh
-rng = np.random.default_rng()
-from math import factorial, comb
 from scipy import sparse
 
 def digit(num,base,i):
