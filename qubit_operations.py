@@ -85,6 +85,7 @@ def ground_state(H, return_eigenvector=False):
     out = eigsh(H,k=1,which='SA', return_eigenvectors=return_eigenvector)
     if return_eigenvector:
         E, psi = out
+        E = E[0]
         psi = psi.flatten()
         return E, psi
     else:
